@@ -4,13 +4,20 @@ import Image from "next/image"
 
 export default function Menu(){
     return(
+      <body>
      <header className = {styles.cabecalho} >
       <Image width={300} height={100} src={"https://ead.ifms.edu.br/pluginfile.php/1/theme_moove/logo/1699458447/banner%20topo%20capa%20sem%20brasao.jpg"}></Image>
-      <h1>Samambaia Gameplays</h1>
-       <nav>
-          <ul>
+      <h1></h1>
+       <nav className = {styles.nav}>
+          
+       </nav>
+
+     </header>
+     <footer className={styles.footer}>
+<ul className = {styles.lista
+          }>
             <Link href="/">
-            <li>Castunfo</li>
+            <li>Cursos Disponíveis</li>
             </Link>
 
             <Link href="/registro">
@@ -18,12 +25,10 @@ export default function Menu(){
             </Link>
 
             <Link href="/localizacao">
-            <li>Mapa Mundi</li>
+            <li>Procure uma instituição perto de você</li>
             </Link>
-           
           </ul>
-       </nav>
-     </header>
-
+     </footer>
+     </body>
     )
 }
